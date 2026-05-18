@@ -1,0 +1,39 @@
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.vectorstores import Chroma
+from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
+from langchain.chains import RetrievalQA
+from dotenv import load_dotenv
+
+# Load the PDF document and split it into chunks for retrieval.
+loader = PyPDFLoader("data/company_policy.pdf")
+docs = loader.load()
+load_dotenv(override=True)
+
+# Debug API Key
+#print("Loaded Key:", os.getenv("OPENAI_API_KEY"))
+
+# Create embeddings for each chunk using OpenAI embeddings.
+embedding = OpenAIEmbeddings()
+
+# Store the document embeddings in Chroma vector database.
+db = Chroma.from_documents(docs, embedding)
+
+# Build a retriever for semantic search over the stored vectors.
+retriever = db.as_retriever()
+
+# Initialize the chat model that will answer questions.
+llm = ChatOpenAI()
+
+# Create a retrieval-augmented QA chain using the retriever and LLM.
+qa = RetrievalQA.from_chain_type(
+    llm=llm,
+    retriever=retriever
+)
+
+# Ask Question
+query = "What is the leave policy?"
+
+result = qa.run(query)
+
+print(result)
