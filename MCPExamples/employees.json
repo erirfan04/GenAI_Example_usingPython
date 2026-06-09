@@ -1,0 +1,20 @@
+[
+  {
+    "id": 101,
+    "name": "Irfan Khan",
+    "department": "Oracle DBA",
+    "salary": 85000
+  },
+  {
+    "id": 102,
+    "name": "Amit Sharma",
+    "department": "AI Trainer",
+    "salary": 92000
+  },
+  {
+    "id": 103,
+    "name": "Sara Ali",
+    "department": "HR",
+    "salary": 78000
+  }
+]

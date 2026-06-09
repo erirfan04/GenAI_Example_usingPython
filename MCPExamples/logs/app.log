@@ -1,0 +1,25 @@
+2026-06-08 14:56:52,794 - INFO - MCP Server Started
+2026-06-08 15:06:18,393 - INFO - MCP Server Started
+2026-06-08 15:11:19,353 - INFO - MCP Server Started
+2026-06-08 15:13:59,574 - INFO - MCP Server Started
+2026-06-08 15:16:25,993 - INFO - MCP Server Started
+2026-06-08 15:22:21,022 - INFO - MCP Server Started
+2026-06-08 15:24:37,486 - INFO - MCP Server Started
+2026-06-08 15:29:38,543 - INFO - MCP Server Started
+2026-06-08 15:32:43,903 - INFO - MCP Server Started
+2026-06-08 23:13:36,858 - INFO - MCP Server Started
+2026-06-08 23:26:39,410 - INFO - MCP Server Started
+2026-06-08 23:28:25,249 - INFO - MCP Server Started
+2026-06-08 23:28:25,270 - INFO - Processing request of type ListToolsRequest
+2026-06-08 23:28:25,272 - INFO - Processing request of type ListPromptsRequest
+2026-06-08 23:28:25,277 - INFO - Processing request of type ListResourcesRequest
+2026-06-08 23:30:30,821 - INFO - Processing request of type CallToolRequest
+2026-06-08 23:30:30,836 - INFO - Employee found: 101
+2026-06-09 00:00:52,200 - INFO - MCP Server Started
+2026-06-09 00:00:52,239 - INFO - Processing request of type ListToolsRequest
+2026-06-09 00:00:52,241 - INFO - Processing request of type ListPromptsRequest
+2026-06-09 00:00:52,241 - INFO - Processing request of type ListResourcesRequest
+2026-06-09 00:57:29,668 - INFO - Processing request of type CallToolRequest
+2026-06-09 00:57:29,677 - INFO - Employee found: 101
+2026-06-09 00:58:15,840 - INFO - Processing request of type CallToolRequest
+2026-06-09 00:58:15,886 - INFO - Salary statistics generated
